@@ -89,7 +89,7 @@ $ ssh -i Ec2SecretKey.pem <user name>@<host name>
 image::imgs/handson-01/app_architecture.png[hands-on 01 architecture, 600, align="center"]
 
 このアプリケーションではまず，**VPC (Virtual Private Cloud)** を使ってプライベートな仮想ネットワーク環境を立ち上げている．
-そのVPCの public subnet の内側に，**EC2 (Elatic Compute Cloud)** の仮想サーバーを配置する．
+そのVPCの public subnet の内側に，**EC2 (Elastic Compute Cloud)** の仮想サーバーを配置する．
 さらに，セキュリティのため， **Security Group** によるEC2インスタンスへのアクセス制限を設定している．
 このようにして作成された仮想サーバーに，SSHを使ってアクセスし，簡単な計算を行う．
 
@@ -573,7 +573,7 @@ image::imgs/handson-01/cloudformation_console.png[cloudformation console, 700, a
 最後に，使わなくなったスタックを削除しよう．
 スタックの削除には，二つの方法がある．
 
-一つ目の方法は，前節の Cloudformation のコンソール画面で， "Delete" ボタンを押すことである (<<cloudformation_delete>>)．
+一つ目の方法は，前節の CloudFormation のコンソール画面で， "Delete" ボタンを押すことである (<<cloudformation_delete>>)．
 すると，スタックの状態が `"DELETE_IN_PROGRESS"` に変わり，削除が完了すると CloudFormation のスタックの一覧から消える．
 
 [[cloudformation_delete]]
